@@ -17,6 +17,7 @@
   font-size: 15px;
   margin-left: 20px;
 }
+
 .usertop .fas{
   color: #fff;
   float: right;
@@ -31,13 +32,7 @@ text-align:center;
 body{
    background-color: #072563;
 }
-.wrapper{
-  display: flex;
-  display: table-cell;
-  float: left;
-  margin-right: 10px;
-  padding-bottom: 100px;
-}
+
 .button{
   float:right ;
   height:40px;
@@ -47,11 +42,14 @@ body{
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.heading h1{
+.heading{
+  color: rgba(25, 31, 94, 0.7);padding-top:20px;padding-bottom:10px;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 40px;
-}
-.form{
 
+}
+
+.form{
   width:auto;
   height:500px;
   padding: 25px;
@@ -63,7 +61,7 @@ body{
 
 .wrapper .sidebar{
   position:relative;
-  float: left;
+  /* float: left; */
   width: 225px;
   height: 525px;
   background: #ffffff;
@@ -100,9 +98,17 @@ color:#e0e4e8
 .info{
   margin-left: 150px;
 }
-.mainpg{
+.wrapper{
+  display: block;
   float: left;
-  display:table-cell;
+  margin-right: 10px;
+ 
+}
+.Flex-box{
+  display:flex;
+  width:100%;
+}
+.mainpg{
   width: 100%;
   padding-left: 35px;
   padding-right: 35px;
@@ -128,7 +134,7 @@ color:#e0e4e8
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
 
-.wrapper .sidebar ul li a{
+.wrapper .sidebar ul li{
   margin-left: 20px;
   color: #230f88;
   display: block;
@@ -136,4 +142,77 @@ color:#e0e4e8
 
 .wrapper .sidebar ul li a .fas{
   width: 25px;
+}
+/* label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+} */
+#toggle {
+  display: none;
+}
+@media (max-width:708px)
+{
+  .button{
+    float:right ;
+    height:40px;
+    width: 150px;
+    background-color:#190871;
+    color:#fff;
+    border-top-left-radius: auto;
+    border-bottom-right-radius: auto;
+  }
+  .heading{
+    color: rgba(33, 16, 162, 0.7);padding-top:20px;padding-bottom:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+  }
+  .Flex-box{
+    display:block;
+    width:100%;
+  }
+  .wrapper{
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+   
+  }
+  .wrapper .sidebar{
+    
+    text-align: center;
+    width: 600px;
+    height: 50%;
+    background: #ffffff;
+    color: rgb(12, 12, 99);
+    /* padding: 15px 15px;
+    border-bottom-right-radius: 50px; */
+  
+  }
+  .wrapper .sidebar ul li{
+    margin-left: 20px;
+    color: #230f88;
+    display: block;
+  }
+  /* label {
+    display: block;
+    cursor: pointer;
+}
+.sidebar {
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.sidebar ul{
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+ 
+}
+#toggle:checked + .sidebar {
+    display: block;
+} */
 }
