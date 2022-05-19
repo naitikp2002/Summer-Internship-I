@@ -1,0 +1,43 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center ; 
+}
+.container{
+    
+    justify-content: center;
+    display:inline-block;
+    align-items: center ; 
+    /* height: auto; */
+    width: auto;
+    background-color: antiquewhite;
+    padding:20px;
+}
+#btn1{
+    justify-content: center;
+    height:40px;
+    width:40px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: chartreuse;
+    color:chocolate;
+}
+#input1{
+
+    justify-content: center;
+    width:400px;
+    height:40px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(237, 100, 139);
+    color:aliceblue;
+    outline-style: none;
+    font-size: 20px;
+    
+}
+p{
+    font-size: 30px;
+    display: block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
