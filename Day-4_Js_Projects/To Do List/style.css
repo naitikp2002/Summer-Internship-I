@@ -1,14 +1,18 @@
+html, body {
+    min-height: 100%;
+}
 body{
 display: flex;
 justify-content: center;
 align-items: center ; 
+background-image: linear-gradient(#C9FFBF, #FFAFBD);
+background-size:cover;
+background-repeat: no-repeat;
+/* height: 100%; */
 }
 .container{
-    
-    justify-content: center;
-    display:inline-block;
-    align-items: center ; 
-    /* height: auto; */
+    /* box-shadow: 5px 10px #757575; */
+    height: auto;
     border-radius: 10px;
     width: auto;
     background-color: rgb(59, 58, 56);
