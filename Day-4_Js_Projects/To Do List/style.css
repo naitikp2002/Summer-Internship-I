@@ -9,8 +9,9 @@ align-items: center ;
     display:inline-block;
     align-items: center ; 
     /* height: auto; */
+    border-radius: 10px;
     width: auto;
-    background-color: antiquewhite;
+    background-color: rgb(59, 58, 56);
     padding:20px;
 }
 #btn1{
@@ -39,5 +40,6 @@ align-items: center ;
 p{
     font-size: 30px;
     display: block;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }

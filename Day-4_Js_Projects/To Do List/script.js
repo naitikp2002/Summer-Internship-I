@@ -7,6 +7,13 @@ btn.addEventListener('click',function(){
     para.innerHTML=input1.value;
     console.log(para.innerText);
     list.appendChild(para);
+    input1.value='';
+    para.addEventListener('click',function(){
+        para.style.textDecoration="line-through";
+    })
+    para.addEventListener('dblclick',function(){
+        list.removeChild(para)
+    })
 })
 
 console.log("Hello")
