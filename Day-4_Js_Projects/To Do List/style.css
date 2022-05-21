@@ -8,10 +8,8 @@ align-items: center ;
 background-image: linear-gradient(#C9FFBF, #FFAFBD);
 background-size:cover;
 background-repeat: no-repeat;
-/* height: 100%; */
 }
 .container{
-    /* box-shadow: 5px 10px #757575; */
     height: auto;
     border-radius: 10px;
     width: auto;
@@ -29,7 +27,6 @@ background-repeat: no-repeat;
     color:chocolate;
 }
 #input1{
-
     justify-content: center;
     width:400px;
     height:40px;
@@ -39,11 +36,11 @@ background-repeat: no-repeat;
     color:aliceblue;
     outline-style: none;
     font-size: 20px;
-    
 }
 p{
     font-size: 30px;
     display: block;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    margin-top:10px;
 }
