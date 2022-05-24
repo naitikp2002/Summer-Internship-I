@@ -1,0 +1,8 @@
+I learned how to install Node and reactjs
+
+to create reacrt app use this command:
+
+npx create-react-app app_name
+cd app_name
+npm install
+npm start
