@@ -6,8 +6,11 @@ import Table from "./Table";
 const baseURL = "https://jsonplaceholder.typicode.com/users";
 
 function App() {
-  const handleclick = () => {};
+  const handlechange = (event) => {
+    setSData(event.target.value);
+  };
   const [data, setData] = useState([]);
+  const [sdata, setSData] = useState("");
 
   useEffect(() => {
     axios.get(baseURL).then((response) => {
@@ -16,7 +19,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Table data={data}/>
+      <div className="inp">
+      <input placeholder="Search name" onChange={handlechange}/>
+      </div>
+      <Table data={data} sdata={sdata}/>
     </div>
   );
 }

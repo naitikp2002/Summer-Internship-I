@@ -1,7 +1,7 @@
 import React from 'react'
 import "./App.css";
 
-function Table({data}) {
+function Table({data,sdata}) {
   return (
     <div className='Table'><table>
     <tr>
@@ -14,7 +14,15 @@ function Table({data}) {
       <th>website</th>
       <th>Company</th>
     </tr>
-  {data.map((items, key) => {
+  {data.filter((val)=>{
+    if(sdata === ""){
+    return val
+    }
+    else if(val.name.includes(sdata))
+    {
+        return val;
+    }
+  }).map((items, key) => {
     return <tr>
       <td>{items.id}</td>
       <td>{items.name}</td>
