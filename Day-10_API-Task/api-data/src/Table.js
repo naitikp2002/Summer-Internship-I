@@ -2,7 +2,7 @@ import React from 'react'
 import "./App.css";
 import Table from 'react-bootstrap/Table'
 
-function Data({data,sdata}) {
+function Data({data,sdata,fname}) {
   return (
     <div className='Table'>
     <Table striped bordered hover size="sm">
@@ -23,10 +23,14 @@ function Data({data,sdata}) {
     if(sdata === ""){
     return val
     }
-    else if(val.name.includes(sdata))
+    else if((val.fname.toString().includes(sdata)))
     {
         return val;
     }
+    // else if((val.address.street.toString().includes(sdata)) || (val.address.zipcode.toString().includes(sdata)) || (val.address.city.toString().includes(sdata)) || (val.address.suite.toString().includes(sdata)))
+    // {
+    //     return val;
+    // }
   }).map((items, key) => {
     return <tr>
       <td>{items.id}</td>
