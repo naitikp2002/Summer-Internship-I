@@ -15,6 +15,7 @@ input{
   margin-top: 50px;
   justify-content: center;
   text-align: center;
+  display:flex
 }
 .App-logo {
   height: 40vmin;

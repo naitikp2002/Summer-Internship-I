@@ -1,9 +1,12 @@
 import React from 'react'
 import "./App.css";
+import Table from 'react-bootstrap/Table'
 
-function Table({data,sdata}) {
+function Data({data,sdata}) {
   return (
-    <div className='Table'><table>
+    <div className='Table'>
+    <Table striped bordered hover size="sm">
+    <thead>
     <tr>
       <th>id</th>
       <th>name</th>
@@ -14,6 +17,8 @@ function Table({data,sdata}) {
       <th>website</th>
       <th>Company</th>
     </tr>
+    </thead>
+    <tbody>
   {data.filter((val)=>{
     if(sdata === ""){
     return val
@@ -34,8 +39,9 @@ function Table({data,sdata}) {
       <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
            </tr>;
   })}
-  </table></div>
+  </tbody>
+  </Table></div>
   )
 }
 
-export default Table
+export default Data
