@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Data from "./Table";
 import { Dropdown } from "react-bootstrap";
 
-let fname;
+
 
 const baseURL = "https://jsonplaceholder.typicode.com/users";
 
@@ -14,7 +14,6 @@ function App() {
   };
   const getcol = (val) => {
     setStypeData(val.target.value);
-    fname=stypedata;
   };
 
   const [data, setData] = useState([]);
@@ -31,10 +30,7 @@ function App() {
       <div className="inp">
         <div className="select">
           {console.log(stypedata)}
-          {fname = stypedata}
-          {console.log(fname)}
           <select onChange={(e)=>getcol(e)}>
-            <option value="">Select column</option>
             <option value="id">id</option>
             <option value="name">name</option>
             <option value="email">email</option>
@@ -61,7 +57,7 @@ function App() {
       </Dropdown> */}
         <input placeholder="Search name" onChange={handlechange} />
       </div>
-      <Data data={data} sdata={sdata} fname={fname}/>
+      <Data data={data} sdata={sdata} fname={stypedata}/>
     </div>
   );
 }
