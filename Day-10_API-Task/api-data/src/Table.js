@@ -180,10 +180,11 @@ function Data({data,sdata,fname}) {
               case 'company':
                 return  (data.filter((val)=>{
                   if(sdata === ""){
-                  return val
+                  return val;
                   }
-                  else if((val.company.name.toString().includes(sdata))|| (val.company.bs.toString().includes(sdata))|| (val.company.chatchPhrase.toString().includes(sdata)) )
+                  else if((val.company?.name?.toString().includes(sdata))|| (val.company.bs.toString().includes(sdata))|| (val.company.catchPhrase.toString().includes(sdata)) )
                   {
+                    console.log(val.company.name)
                       return val;
                   }
                   return false

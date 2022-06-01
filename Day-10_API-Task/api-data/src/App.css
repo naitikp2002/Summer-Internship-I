@@ -13,10 +13,14 @@ input{
   margin: 10px;
 }
 .inp{
-  margin-top: 50px;
+  margin-top:50px;
   justify-content: center;
   text-align: center;
   display:flex;
+}
+select{
+  height:auto;
+
 }
 .App-logo {
   height: 40vmin;
