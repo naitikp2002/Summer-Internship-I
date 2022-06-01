@@ -10,12 +10,13 @@
 input{
   width: 300px;
   height: 25px;
+  margin: 10px;
 }
 .inp{
   margin-top: 50px;
   justify-content: center;
   text-align: center;
-  display:flex
+  display:flex;
 }
 .App-logo {
   height: 40vmin;
@@ -24,6 +25,7 @@ input{
 td, th, table{
   border: 1px solid black;
 }
+
 td, th{
   padding:5px;
 }

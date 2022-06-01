@@ -31,6 +31,7 @@ function Data({data,sdata,fname}) {
               {
                   return val;
               }
+              return false
             }).map((items, key) => {
               return <tr>
                 <td>{items.id}</td>
@@ -40,7 +41,7 @@ function Data({data,sdata,fname}) {
                 <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                 <td>{items.phone}</td>
                 <td>{items.website}</td>
-                <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                 </tr>;
             }))
 
@@ -53,6 +54,7 @@ function Data({data,sdata,fname}) {
               {
                   return val;
               }
+              return false
             }).map((items, key) => {
               return <tr>
                 <td>{items.id}</td>
@@ -62,7 +64,7 @@ function Data({data,sdata,fname}) {
                 <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                 <td>{items.phone}</td>
                 <td>{items.website}</td>
-                <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                 </tr>;
             }))
           case 'username':
@@ -74,6 +76,7 @@ function Data({data,sdata,fname}) {
               {
                   return val;
               }
+              return false
             }).map((items, key) => {
               return <tr>
                 <td>{items.id}</td>
@@ -83,7 +86,7 @@ function Data({data,sdata,fname}) {
                 <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                 <td>{items.phone}</td>
                 <td>{items.website}</td>
-                <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                 </tr>;
             }))
           case 'address':
@@ -95,6 +98,7 @@ function Data({data,sdata,fname}) {
               {
                   return val;
               }
+              return false
             }).map((items, key) => {
               return <tr>
                 <td>{items.id}</td>
@@ -104,7 +108,7 @@ function Data({data,sdata,fname}) {
                 <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                 <td>{items.phone}</td>
                 <td>{items.website}</td>
-                <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                 </tr>;
             }))
             case 'email':
@@ -116,6 +120,7 @@ function Data({data,sdata,fname}) {
                 {
                     return val;
                 }
+                return false
               }).map((items, key) => {
                 return <tr>
                   <td>{items.id}</td>
@@ -125,7 +130,7 @@ function Data({data,sdata,fname}) {
                   <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                   <td>{items.phone}</td>
                   <td>{items.website}</td>
-                  <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                  <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                   </tr>;
               }))
            case 'phone':
@@ -137,6 +142,7 @@ function Data({data,sdata,fname}) {
               {
                   return val;
               }
+              return false
             }).map((items, key) => {
               return <tr>
                 <td>{items.id}</td>
@@ -146,7 +152,7 @@ function Data({data,sdata,fname}) {
                 <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                 <td>{items.phone}</td>
                 <td>{items.website}</td>
-                <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                 </tr>;
             }))
             case 'website':
@@ -158,6 +164,7 @@ function Data({data,sdata,fname}) {
                 {
                     return val;
                 }
+                return false
               }).map((items, key) => {
                 return <tr>
                   <td>{items.id}</td>
@@ -167,7 +174,7 @@ function Data({data,sdata,fname}) {
                   <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                   <td>{items.phone}</td>
                   <td>{items.website}</td>
-                  <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                  <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                   </tr>;
               }))
               case 'company':
@@ -179,6 +186,7 @@ function Data({data,sdata,fname}) {
                   {
                       return val;
                   }
+                  return false
                 }).map((items, key) => {
                   return <tr>
                     <td>{items.id}</td>
@@ -188,7 +196,7 @@ function Data({data,sdata,fname}) {
                     <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
                     <td>{items.phone}</td>
                     <td>{items.website}</td>
-                    <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
+                    <td>{items.company.name} {items.company.chatchPhrase} {items.company.bs}</td>
                     </tr>;
                 }))
             default:
@@ -202,29 +210,3 @@ function Data({data,sdata,fname}) {
 }
 
 export default Data
-
-    // else if((val.address.street.toString().includes(sdata)) || (val.address.zipcode.toString().includes(sdata)) || (val.address.city.toString().includes(sdata)) || (val.address.suite.toString().includes(sdata)))
-    // {
-    //     return val;
-    // }
-
-    // {data.filter((val)=>{
-    //   if(sdata === ""){
-    //   return val
-    //   }
-    //   else if((val.fname.toString().includes(sdata)))
-    //   {
-    //       return val;
-    //   }
-    // }).map((items, key) => {
-    //   return <tr>
-    //     <td>{items.id}</td>
-    //     <td>{items.name}</td>
-    //     <td>{items.username}</td>
-    //     <td>{items.email}</td>
-    //     <td>{items.address.street}, {items.address.suite}, {items.address.city}, {items.address.zipcode}</td>
-    //     <td>{items.phone}</td>
-    //     <td>{items.website}</td>
-    //     <td>{items.company.name}, {items.company.chatchPhrase}, {items.company.bs}</td>
-    //     </tr>;
-    // })}
