@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table'
 function Data({data,sdata,fname}) {
   return (
     <div className='Table'>
-    <Table striped bordered hover size="sm">
+    <Table striped bordered hover size="sm" color='white'>
     <thead>
     <tr>
       <th>id</th>
