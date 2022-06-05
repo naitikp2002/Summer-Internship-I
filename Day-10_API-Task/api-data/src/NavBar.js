@@ -4,9 +4,9 @@ import { Container } from 'react-bootstrap'
 import { Nav } from 'react-bootstrap'
 function NavBar() {
   return (
-  <Navbar bg="light" expand="lg">
+  <Navbar bg="transparent" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="/">News Adda</Navbar.Brand>
+    <Navbar.Brand href="/">NewJ</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -16,6 +16,7 @@ function NavBar() {
       >
          <Nav.Link href="/">Home</Nav.Link>
          <Nav.Link href="/data">Data</Nav.Link>
+         <Nav.Link href="/card">Card</Nav.Link>
         </Nav>
     </Navbar.Collapse>
   </Container>
