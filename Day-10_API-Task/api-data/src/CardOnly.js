@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import "./App.css";
 
 const baseURL = "https://jsonplaceholder.typicode.com/users";
 
@@ -17,7 +18,9 @@ function CardOnly() {
       }, []);
   return (
     <div className='CardApp'>
-     {id}
+     <div className='cards'>
+      {data.id}
+     </div>
     </div>
   )
 }
