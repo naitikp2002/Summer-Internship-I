@@ -6,7 +6,6 @@ import Home from "./Home";
 import Card from "./Card";
 import CardOnly from "./CardOnly";
 
-
 function App() {
   return (
     <div>
